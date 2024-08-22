@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body {
+    color: hsl(300, 43%, 22%);
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-image:
+        url('./images/bg-pattern-top-desktop.svg'),
+        url('./images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+.container {
+    padding: 2em 8.5em;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.header-container { 
+    font-size: xx-large;
+}
+
+.para {
+    font-size: 1.3rem;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 400px;
+}
+
+.review:nth-child(2) {
+    margin-right: 3rem;
+    margin-left: -3rem;
+}
+
+.review:nth-child(1) {
+    margin-right: 6rem;
+    margin-left: -6rem;
+}
+
+.review {
+    background-color:  hsl(300, 24%, 96%);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.star {
+    color: rgb(255, 187, 0);
+    display: flex;
+    align-items: center
+}
+
+.article-container {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.person {
+    margin: 5px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 50px 20px;
+}
+
+.person:nth-child(2) {
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.person:nth-child(3) {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.person-title {
+    display: flex;
+    justify-content:flex-start;
+    align-items: stretch;
+    height: 3em;
+}
+
+.person-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.name {
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.title {
+    margin-top: 3px;
+    color: hsl(333, 80%, 67%);
+} 
+
+.quote {
+    margin-top: 3em;
+}
+
+footer {
+    margin: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    font-size: smaller
+}

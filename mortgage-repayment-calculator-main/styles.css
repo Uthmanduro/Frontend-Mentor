@@ -1,0 +1,244 @@
+@import url(https://fonts.google.com/specimen/Plus+Jakarta+Sans);
+
+html, body {
+
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Centers the content */
+    justify-content: center;
+    background-color: hsl(202, 86%, 94%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Centers the content */
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* styling the form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center; /* Centers the content */
+    justify-content: center;
+    margin: 1.1rem;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mortgage-title {
+    font-weight: 700;
+    color: hsl(202, 55%, 16%)
+}
+
+.clear {
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+label[for="rate"], 
+label[for="term"],
+label[for="mortgage-amount"],
+.type {
+    color: hsl(200, 26%, 54%);
+}
+
+.mortgage-amount {
+    width: 100%;
+    margin-bottom: 1rem;
+} 
+
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border: 1px solid hsl(200, 26%, 54%);
+  border-radius: 4px;
+  overflow: hidden;
+  height: 3rem;
+}
+
+.currency-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: #666;
+    font-size: 1rem;
+    background-color: hsl(202, 86%, 94%); 
+    pointer-events: none;
+    font-weight: bold;
+  }
+
+#mortgage-amount {
+    padding: 8px;
+    border: none; /* Remove border as it's now on the wrapper */
+    font-size: 16px;
+    position: relative;
+    width: 85%;
+}
+
+.rate-term {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.mortgage-term{
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.term-input-wrapper{
+    display: flex;
+    border: 1px solid hsl(200, 26%, 54%);
+    border-radius: 5px; 
+    height: 3rem; 
+}
+
+#term {
+    border: none;
+    width: 70%;
+}
+
+.years {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border: none;
+    background-color: hsl(202, 86%, 94%);
+    font-weight: 700;
+    color: hsl(200, 24%, 40%);
+}
+
+.interest-rate {
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.rate-input-wrapper{
+    display: flex;
+    border: 1px solid hsl(200, 26%, 54%);
+    border-radius: 5px; 
+    height: 3rem; 
+}
+
+#rate {
+    border: none;
+    width: 80%;
+}
+
+.percent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    border: none;
+    background-color: hsl(202, 86%, 94%);
+    font-weight: 700;
+    color: hsl(200, 24%, 40%);
+}
+
+.mortgage-type {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+label[class="types"] {
+    border: 1px solid hsl(200, 26%, 54%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+input[type="radio"] {
+    margin: 0 1rem;
+    height: 3rem;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+    border: none;
+    border-radius: 50px;
+    width: 70%;
+    font-weight: bold;
+    font-size: larger;
+}
+
+img {
+    margin-right: 0.7rem;
+}
+
+.results {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: hsl(202, 55%, 16%);
+    align-self: stretch;
+    justify-content: center;
+    border-radius: 0 1rem 1rem 5rem;
+    padding: 0 2rem;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-header {
+    color: hsl(202, 86%, 94%);
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-text {
+    color: hsl(203, 41%, 72%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
+    text-wrap:wrap;
+    margin-top: 0;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
